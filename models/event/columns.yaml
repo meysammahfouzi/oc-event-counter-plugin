@@ -1,0 +1,10 @@
+columns:
+    plugin_name:
+        label: 'meysam.eventcounter::lang.event.plugin_name'
+        type: text
+        searchable: true
+        sortable: true
+    event_name:
+        label: 'meysam.eventcounter::lang.event.name'
+        type: text
+        searchable: true

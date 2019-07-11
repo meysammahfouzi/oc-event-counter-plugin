@@ -1,0 +1,16 @@
+<form class="form-elements" role="form">
+    <div class="form-group dropdown-field span-left">
+        <label>Drop Down</label>
+        <select name="event_id" class="form-control custom-select"
+                data-request="onSelectedEventChange"
+                data-request-update="chart: '#chart'">
+            <?php foreach ($this->getEvents() as $event_id => $event_full_name) { ?>
+                <option value="<?= $event_id ?>"><?= $event_full_name ?></option>
+            <?php } ?>
+        </select>
+    </div>
+</form>
+
+<div id="chart">
+    <?= $this->makePartial('chart') ?>
+</div>

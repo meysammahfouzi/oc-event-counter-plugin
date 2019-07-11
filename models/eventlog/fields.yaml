@@ -1,0 +1,25 @@
+fields:
+    event:
+        label: Event
+        span: auto
+        required: 1
+#        nameFrom: event_name
+        select: concat(plugin_name, '.', event_name)
+        descriptionFrom: description
+        type: relation
+    created_at:
+        label: 'Event Date Time'
+        mode: datetime
+        span: auto
+        required: 1
+        type: datepicker
+    date:
+        label: Date
+        span: auto
+        mode: date
+        required: 1
+        defaultFrom: created_at
+        dependsOn:
+            - created_at
+        type: datepicker
+        ignoreTimezone: true

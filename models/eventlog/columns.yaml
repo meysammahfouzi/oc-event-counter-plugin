@@ -1,0 +1,11 @@
+columns:
+    event:
+        label: 'Event'
+        relation: event
+        select: concat(plugin_name, '.', event_name)
+    created_at:
+        label: 'Event Date Time'
+        type: datetime
+    date:
+        label: Date
+        type: date

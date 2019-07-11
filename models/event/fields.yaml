@@ -1,0 +1,5 @@
+fields:
+    full_event_name:
+        label: 'Event Name'
+        span: auto
+        type: text

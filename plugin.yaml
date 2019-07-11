@@ -1,0 +1,32 @@
+plugin:
+    name: 'meysam.eventcounter::lang.plugin.name'
+    description: 'meysam.eventcounter::lang.plugin.description'
+    author: Meysam
+    icon: oc-icon-pie-chart
+    homepage: ''
+permissions:
+    manage_events:
+        tab: 'meysam.eventcounter::lang.plugin.name'
+        label: 'meysam.eventcounter::lang.event.manage_events'
+navigation:
+    event-counter:
+        label: 'meysam.eventcounter::lang.plugin.name'
+        url: meysam/eventcounter/events
+        icon: icon-bar-chart
+        permissions:
+            - manage_events
+        sideMenu:
+            events:
+                label: Events
+                url: meysam/eventcounter/events
+                icon: icon-lightbulb-o
+                permissions:
+                    - manage_events
+            event-logs:
+                label: 'Event Logs'
+                url: meysam/eventcounter/logs
+                icon: icon-book
+            statistics:
+                label: Statistics
+                url: meysam/eventcounter/statistics
+                icon: icon-pie-chart

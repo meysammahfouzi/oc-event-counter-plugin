@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table meysam_eventcounter_events'
+    - builder_table_create_meysam_eventcounter_events.php
+1.0.3:
+    - 'Created table meysam_eventcounter_event_logs'
+    - builder_table_create_meysam_eventcounter_event_logs.php
+1.0.4:
+    - 'Add date column to meysam_eventcounter_event_logs table'
+    - builder_table_update_meysam_eventcounter_event_logs.php
+1.0.5:
+    - 'Add foreign key constraint to event_id column in meysam_eventcounter_event_logs table'
+    - add_event_id_fk_constraint_to_meysam_eventcounter_event_logs.php

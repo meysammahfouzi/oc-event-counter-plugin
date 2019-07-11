@@ -1,0 +1,11 @@
+name: Logs
+modelClass: Meysam\EventCounter\Models\EventLog
+form: $/meysam/eventcounter/models/eventlog/fields.yaml
+defaultRedirect: meysam/eventcounter/logs
+create:
+    redirect: 'meysam/eventcounter/logs/update/:id'
+    redirectClose: meysam/eventcounter/logs
+update:
+    redirect: meysam/eventcounter/logs
+    redirectClose: meysam/eventcounter/logs
+preview: {  }

@@ -1,0 +1,10 @@
+name: Events
+form: $/meysam/eventcounter/models/event/fields.yaml
+modelClass: Meysam\EventCounter\Models\Event
+defaultRedirect: meysam/eventcounter/events
+create:
+    redirect: 'meysam/eventcounter/events/update/:id'
+    redirectClose: meysam/eventcounter/events
+update:
+    redirect: meysam/eventcounter/events
+    redirectClose: meysam/eventcounter/events
