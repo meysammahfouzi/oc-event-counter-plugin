@@ -1,2 +1,2 @@
-# oc-event-counter-plugin
+# OctoberCMS Event Counter Plugin
 Event Counter for OctoberCMS
