@@ -1,5 +1,8 @@
 # OctoberCMS Event Counter Plugin
-Event Counter for OctoberCMS
+
+<img src="icon.png" height="100">
+
+This plugin allows you to monitor your desired events and see a chart for each of them, showing how they have happened over time.
 
 # TODO
 
