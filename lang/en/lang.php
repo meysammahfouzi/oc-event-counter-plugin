@@ -1,7 +1,7 @@
 <?php return [
     'plugin' => [
         'name' => 'Event Counter',
-        'description' => '',
+        'description' => 'This plugin allows you to draw time-series charts for the events you want to monitor.',
     ],
     'event' => [
         'name' => 'Event Name',
