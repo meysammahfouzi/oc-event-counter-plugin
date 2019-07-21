@@ -13,11 +13,15 @@ To monitor an event, simply add its fully qualified name to the list of events p
 # Monitoring Events
 After you add your desired events, they will be automatically logged as they happen. On the `Statistics` page under the `Event Counter` menu, you can see the time-series chart of any of your events by selecting the event name from a dropdown menu.
 
+# Known Bugs
+- The data point is not shown on the chart if the data is available only for one day.
+
 # Planned Features
 1. Add dashboard widgets
 2. Add an alert for counters that go above or below a threshold
 3. Add counter for page visits
 4. Log event parameters
+5. Add support for Prometheus monitoring system
 
 # Contribution
 Please feel free to 
