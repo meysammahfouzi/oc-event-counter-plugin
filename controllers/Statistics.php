@@ -7,8 +7,8 @@ use Meysam\EventCounter\Widgets\Chart;
 
 class Statistics extends Controller
 {
-    public $implement = [    ];
-    
+    public $implement = [];
+
     public function __construct()
     {
         parent::__construct();
@@ -24,7 +24,9 @@ class Statistics extends Controller
     public function index()    // <=== Action method
     {
         $first_event = DB::table('meysam_eventcounter_events')->select('id', 'plugin_name', 'event_name')->first();
-        $this->widget->chart->setEventId($first_event->id);
+        if (!is_null($first_event)) {
+            $this->widget->chart->setEventId($first_event->id);
+        }
     }
 
     public function getEvents()
