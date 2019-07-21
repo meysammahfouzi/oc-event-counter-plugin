@@ -8,7 +8,7 @@ use Model;
 class Event extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
 
     /**
      * @var string The database table used by the model.
@@ -19,6 +19,7 @@ class Event extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'event_name' => 'required|unique:meysam_eventcounter_events|between:1,100'
     ];
 
     /* Relations */
@@ -50,8 +51,7 @@ class Event extends Model
 
     public function getFullEventNameAttribute()
     {
-        if ($this->exists)
-        {
+        if ($this->exists) {
             return (($this->plugin_name != '') ? ($this->plugin_name . '.') : '') . $this->event_name;
         }
         return "";
