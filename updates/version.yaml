@@ -12,3 +12,6 @@
 1.0.5:
     - 'Add foreign key constraint to event_id column in meysam_eventcounter_event_logs table'
     - add_event_id_fk_constraint_to_meysam_eventcounter_event_logs.php
+1.0.6:
+    - 'Make the event_name column unique in meysam_eventcounter_events table'
+    - make_event_name_unique_meysam_eventcounter_events.php
