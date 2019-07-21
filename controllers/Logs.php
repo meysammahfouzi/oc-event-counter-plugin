@@ -5,13 +5,13 @@ use BackendMenu;
 
 class Logs extends Controller
 {
-    public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController'    ];
-    
+    public $implement = ['Backend\Behaviors\ListController', 'Backend\Behaviors\FormController'];
+
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
     public $requiredPermissions = [
-        'manage_events' 
+        'manage_events'
     ];
 
     public function __construct()

@@ -8,7 +8,7 @@ use Model;
 class EventLog extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
 
     /**
      * @var string The database table used by the model.

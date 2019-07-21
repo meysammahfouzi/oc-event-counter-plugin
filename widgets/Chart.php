@@ -34,10 +34,9 @@ class Chart extends WidgetBase
             ->where('event_id', '=', $this->eventId)
             ->groupBy('date')->limit(100)->get();
         $result = "";
-        foreach ($logs as $log)
-        {
-            $result .= "[" . strtotime($log->date)*1000 . ", " . $log->total . "], ";
+        foreach ($logs as $log) {
+            $result .= "[" . strtotime($log->date) * 1000 . ", " . $log->total . "], ";
         }
-        return rtrim($result,", ");  // remove the last comma
+        return rtrim($result, ", ");  // remove the last comma
     }
 }

@@ -7,16 +7,14 @@ class AddEventIdFKConstraintToMeysamEventcounterEventLogs extends Migration
 {
     public function up()
     {
-        Schema::table('meysam_eventcounter_event_logs', function($table)
-        {
+        Schema::table('meysam_eventcounter_event_logs', function ($table) {
             $table->foreign('event_id')->references('id')->on('meysam_eventcounter_events')->onDelete('cascade');
         });
     }
 
     public function down()
     {
-        Schema::table('meysam_eventcounter_event_logs', function($table)
-        {
+        Schema::table('meysam_eventcounter_event_logs', function ($table) {
             $table->dropForeign(['event_id']);
         });
     }

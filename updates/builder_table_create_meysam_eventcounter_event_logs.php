@@ -7,8 +7,7 @@ class BuilderTableCreateMeysamEventcounterEventLogs extends Migration
 {
     public function up()
     {
-        Schema::create('meysam_eventcounter_event_logs', function($table)
-        {
+        Schema::create('meysam_eventcounter_event_logs', function ($table) {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->integer('event_id')->unsigned();
@@ -16,7 +15,7 @@ class BuilderTableCreateMeysamEventcounterEventLogs extends Migration
             $table->timestamp('updated_at');
         });
     }
-    
+
     public function down()
     {
         Schema::dropIfExists('meysam_eventcounter_event_logs');

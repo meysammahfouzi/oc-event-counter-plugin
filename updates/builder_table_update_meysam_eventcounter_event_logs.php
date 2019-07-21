@@ -7,16 +7,14 @@ class BuilderTableUpdateMeysamEventcounterEventLogs extends Migration
 {
     public function up()
     {
-        Schema::table('meysam_eventcounter_event_logs', function($table)
-        {
+        Schema::table('meysam_eventcounter_event_logs', function ($table) {
             $table->date('date')->nullable();
         });
     }
-    
+
     public function down()
     {
-        Schema::table('meysam_eventcounter_event_logs', function($table)
-        {
+        Schema::table('meysam_eventcounter_event_logs', function ($table) {
             $table->dropColumn('date');
         });
     }
