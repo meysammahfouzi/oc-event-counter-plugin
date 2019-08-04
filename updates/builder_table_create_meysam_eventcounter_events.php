@@ -12,8 +12,8 @@ class BuilderTableCreateMeysamEventcounterEvents extends Migration
             $table->increments('id')->unsigned();
             $table->string('plugin_name', 100);
             $table->string('event_name', 100);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 
